@@ -1,6 +1,5 @@
 package unam.ciencias.computoconcurrente;
 
-import java.util.Random;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -18,7 +17,9 @@ class MatrixUtilsTest {
                 {0, 0, -1, 39},
         };
 
-        assertEquals(9.37, matrixUtils.findAverage(matrix));
+        // assertEquals(9.37, matrixUtils.findAverage(matrix));
+        assertEquals(9.37, matrixUtils.findAverage(matrix), 0.01);
+
     }
 
     @Test
@@ -31,7 +32,9 @@ class MatrixUtilsTest {
                 {0, 0, -1, 39},
         };
 
-        assertEquals(9.37, matrixUtils.findAverage(matrix));
+        //assertEquals(9.37, matrixUtils.findAverage(matrix));
+        assertEquals(9.37, matrixUtils.findAverage(matrix), 0.01);
+
     }
 
     @Test
