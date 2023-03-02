@@ -4,20 +4,20 @@ public class App {
 
     public static void main(String[] a) throws InterruptedException {
         
-        double iniSec = System.currentTimeMillis();
+        long iniSec = System.currentTimeMillis();
         PrimeNumberCalculator secuencial = new PrimeNumberCalculator(24);
         secuencial.isPrime(104543);
-        double finSec = System.currentTimeMillis();
+        long finSec = System.currentTimeMillis();
 
-        double tiempo01 = finSec - iniSec;
+        long tiempo01 = finSec - iniSec;
 
 
-        double iniPar = System.currentTimeMillis();
+        long iniPar = System.currentTimeMillis();
         PrimeNumberCalculator paralelo = new PrimeNumberCalculator(4);
         paralelo.isPrime(104543);
-        double finPar = System.currentTimeMillis();
+        long finPar = System.currentTimeMillis();
 
-        double tiempo02 = finPar -iniPar;
+        long tiempo02 = finPar -iniPar;
 
       
         System.out.println("Comparacion ejercicio 01");
@@ -35,21 +35,21 @@ public class App {
 
 
 
-        double iniSec2 = System.currentTimeMillis();
+        long iniSec2 = System.currentTimeMillis();
         MatrixUtils secuencial2 = new MatrixUtils();
         secuencial2.findMinimum(matrix);
-        double finSec2 = System.currentTimeMillis();
+        long finSec2 = System.currentTimeMillis();
 
-        double tiempo011 = finSec2 - iniSec2;
+        long tiempo011 = finSec2 - iniSec2;
 
 
         
-        double iniPar2 = System.currentTimeMillis();
+        long iniPar2 = System.currentTimeMillis();
         MatrixUtils paralelo2 = new MatrixUtils(4);
         paralelo2.findMinimum(matrix);
-        double finPar2 = System.currentTimeMillis();
+        long finPar2 = System.currentTimeMillis();
 
-        double tiempo022 = finPar2 -iniPar2;
+        long tiempo022 = finPar2 -iniPar2;
 
         System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
         System.out.println("Comparacion ejercicio 02");
