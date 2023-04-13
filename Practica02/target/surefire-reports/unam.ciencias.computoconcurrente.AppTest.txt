@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: unam.ciencias.computoconcurrente.AppTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 10.356 s <<< FAILURE! - in unam.ciencias.computoconcurrente.AppTest
+testFivePhilosophersMultipleMeals  Time elapsed: 0.018 s
+testThreadCreationAndExecution  Time elapsed: 0.006 s
+testFivePhilosophers  Time elapsed: 10.321 s  <<< ERROR!
+java.util.concurrent.TimeoutException: testFivePhilosophers() timed out after 10 seconds
+
